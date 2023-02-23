@@ -2,84 +2,9 @@
 
 
 
-
-/* Font */
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-/* Estilos generales inicia acá (header y footer) */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    color: antiquewhite;
-    line-height: 1.2;
-    font-size: 18px;
-}
-
-body {
-    background-color: #4F4A49;
-    opacity: 0.9;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(../img/backround1.jpg);
-    
-
- 
-}
-
-header {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background-color: #4F4A49;
-
-
-
-
-}
-
-#nav_menu li {
-    width: 13vw;
-    padding: 10px 50px;
-    list-style: none;
-    color: antiquewhite;
-    z-index: 1;
-    display: inline-block;
-   
-
-}
-
-.nav_li a:hover {
-    background-color: royalblue;
-    border-radius: 4px;
-    color: gold;
-
-}
-
-a {
-    text-decoration: none;
-   
-}
-
-ul {
-    list-style: none;
-}
-
-#logo_nav img {
-    
-    width: 10vw;
-    height: 8vh;
-}
-
-
-
 .contacto-texto{
     text-align: justify;
-    padding: 250px;
+    padding: 320px;
     justify-content: center;
     align-items: center;
     border-color: darkgray;

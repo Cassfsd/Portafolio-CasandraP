@@ -1,58 +1,8 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    color: antiquewhite;
-    line-height: 1.2;
-    font-size: 18px;
-}
 
-header {
-    width: 100vw;
-    height: 10vh;
+
+.sobremi {
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background-color: #4F4A49;
-
-
-
-
-}
-
-#nav_menu li {
-    width: 12vw;
-    height: 10vh;
-    padding: 10px 50px;
-    list-style: none;
-    color: antiquewhite;
-    z-index: 1;
-    display: inline-block;
-    /*reducir espacio entre cada li del nav y hacer funcionar el hover en todos los enlaces */
-
-}
-
-.nav_li a:hover {
-    background-color: royalblue;
-    border-radius: 4px;
-    color: gold;
-
-}
-
-a {
-    text-decoration: none;
-   
-}
-
-ul {
-    list-style: none;
-}
-
-#logo_nav img {
-   
-    width: 10vw;
-    height: 8vh;
+    word-wrap: nowrap;
 }
 
 /* Estilos generales y header finaliza acá */
@@ -60,8 +10,12 @@ ul {
 
 /*Estilos de main inicia acá*/
 body {
-    background-color: #4F4A49;
- }
+
+    opacity: 0.9;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+        url(../img/backround3.jpg.png);
+        position:
+}
 
 h1{
     padding-top: 80px;
@@ -72,6 +26,11 @@ h1{
    justify-content: center;
     align-items: center;
    padding: 100px;
+}
+
+p{
+    text-align: justify;
+
 }
 
 .boton-frontend{

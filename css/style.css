@@ -8,93 +8,21 @@
 
 
 
-/* Font */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-/* Estilos generales inicia acá (header y footer) */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    color: antiquewhite;
-    line-height: 1.2;
-    font-size: 18px;
-}
-
-header {
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background-color: #4F4A49;
-
-
-
-
-}
-
-#nav_menu li {
-    width: 13vw;
-    height: 10vh;
-    padding: 10px 50px;
-    list-style: none;
-    color: antiquewhite;
-    z-index: 1;
-    display: inline-block;
-    /*reducir espacio entre cada li del nav y hacer funcionar el hover en todos los enlaces */
-
-}
-
-.nav_li a:hover {
-    background-color: royalblue;
-    border-radius: 4px;
-    color: gold;
-
-}
-
-a {
-    text-decoration: none;
-   
-}
-body {
-    background-color: #4F4A49;
-    opacity: 0.9;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(../img/backround1.jpg);
-}
-
-ul {
-    list-style: none;
-}
-
-#logo_nav img {
-   
-    width: 10vw;
-    height: 8vh;
-}
-
-.sobremi {
-    display: flex;
-    word-wrap: nowrap;
-}
-/* Estilos generale y header  finaliza acá */
+/* Estilos generales y header  finaliza acá */
 
 
 /*Estilos de index inicia acá*/
 
 
-
-.h1,h2{
+.h1,
+h2 {
     justify-content: center;
 }
-.texto-inicio{
-  padding-left: 5rem
 
+.texto-inicio {
+    padding-left: 5rem
 }
 
 
@@ -115,23 +43,23 @@ ul {
     min-height: 100vh;
 }
 
-.frontend{
+.frontend {
     justify-content: center;
     text-align: center;
 
 }
 
 
-.conoce-mas{
+.conoce-mas {
     display: flex;
     color: antiquewhite;
     background-color: goldenrod;
     border-color: rgb(227, 212, 184);
-    
+
 
 }
 
-.conoce-mas a:hover{
+.conoce-mas a:hover {
     background-color: royalblue;
     border-color: rgb(51, 51, 180);
     color: antiquewhite;
@@ -142,39 +70,56 @@ ul {
 
 /*Estilos de index finaliza acá*/
 
+.h1,
+h2 {
+    justify-content: center;
+}
 
-/*Estilo página Carrera comienza acá
-
-Revisar: poner las 2 img en una misma linea con flexbox
-darle flexbox a los graficos 
-revisar que cada seccion se vea por separado, solo una seccion a la vez
-hacer lista desplegable en habilidades blandas 
+.texto-inicio {
+    padding-left: 5rem
+}
 
 
+.img_casandra {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    padding-right: 20px;
+}
 
-.proyecto_integrador,
- .proyecto_balsamiq,
- .proyecto_mh{
-   
-    /*poner las 2 img en una sola linea
-    margin-block-start: 6em;
-    margin-block-end: 4em;
-    height: 400px;
-    width: 600px;
-   }
 
-   /*.portafolio_mh{
-    height:500px ;
-    width: 900px;
-    margin-inline-start: 20em;}
-   
 
-   .proyectos{
+.inicio {
     display: flex;
     justify-content: center;
-    height:500px ;
-    width: 900px;
+    align-items: center;
+    min-height: 100vh;
+}
 
-   }
+.frontend {
+    justify-content: center;
+    text-align: center;
 
-/*quiero centrar hab tecnicas e idiomas...????*/
+}
+
+
+.conoce-mas {
+    display: flex;
+    color: antiquewhite;
+    background-color: goldenrod;
+    border-color: rgb(227, 212, 184);
+
+
+}
+
+.conoce-mas a:hover {
+    background-color: royalblue;
+    border-color: rgb(51, 51, 180);
+    color: antiquewhite;
+
+
+}
+
+
+

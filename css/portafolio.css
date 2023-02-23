@@ -1,73 +1,4 @@
-/* Font */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-/* Estilos generales inicia acá (header y footer) */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    color: antiquewhite;
-    line-height: 1.2;
-    font-size: 18px;
-}
-
-header {
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background-color: #4F4A49;
-
-
-
-
-}
-
-#nav_menu li {
-    width: 13vw;
-    height: 10vh;
-    padding: 10px 50px;
-    list-style: none;
-    color: antiquewhite;
-    z-index: 1;
-    display: inline-block;
-    /*reducir espacio entre cada li del nav y hacer funcionar el hover en todos los enlaces */
-
-}
-
-.nav_li a:hover {
-    background-color: royalblue;
-    border-radius: 4px;
-    color: gold;
-
-}
-
-a {
-    text-decoration: none;
-   
-}
-body {
-    background-color: #4F4A49;
-    opacity: 0.9;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(../img/backround1.jpg);
-}
-
-ul {
-    list-style: none;
-}
-
-#logo_nav img {
-   
-    width: 10vw;
-    height: 8vh;
-}
-/*Estilos generales y header finaliza aca */
 
 
 /*Estilos body comienza acá*/
@@ -84,6 +15,7 @@ ul {
     display: flex;
     justify-content: center;
     
+    
 }    
 
 div h1{
@@ -95,6 +27,7 @@ div h1{
    color: antiquewhite;
     width: 40%;
     margin-left: 2rem;
+    padding-top: 30px;
     
 }
 
@@ -130,57 +63,27 @@ div h1{
     color: antiquewhite;
     height: 2em;
     line-height: 2em;
+   }
+
+.proyecto {
    
-
-
-}
-
-
-
-/*Estilo página Carrera finaliza acá
-.proyecto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   
-   
-    
-
-    
-}
-
-.proyecto_integrador,
-.proyecto_balsamiq,
-.portafolio_mm,{
-    margin: 30px 10px;
-    height: 600px;
-    height: 80vh;
-    width: 100%;
-    width: 45vw;
-   
-   
-   } */
-
-   .proyecto {
-    margin-top: 40px;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr; /*repeat(auto-fill, minmax(200px, 1fr)); acá yo tendría 8 celdas, la primera me ocupa un octavo, la segunda 5 octavos y la tercera 2 octavos.*/
     grid-template-rows: repeat(2, 300px);
-    justify-content: center;
     margin-left: 10px;
+    padding-top: 20px;
+    
 
     
    }
 .proyecto_integrador{
     width: 100%;
     max-height: 100%;
-    background-color:#4F4A49;
     background-image: url(../img/primer\ proyecto\ it.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   border: solid #4F4A49 10px;
+   
    
 }
 
@@ -188,19 +91,17 @@ div h1{
 .proyecto_balsamiq{
     width: 100%;
     max-height: 100%;
-    background-color:#4F4A49;
     background-image: url(../img/balsamiq.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border: solid #4F4A49 10px ;
+   
    
 }
 
 .portafolio_balsamiq{
     width: 100%;
-    max: height 100%;;
-    background-color:#4F4A49;
+    max-height: 100%;
     background-image: url(../img/portafoliobalsamiq.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -208,28 +109,30 @@ div h1{
    
 }
 
-.portafolio_codigo{
-    width: 100%;
-    max-height: 100%;
-    background-color:#4F4A49;
-    background-image: url(../img/balsamiq.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-   
-
-}
 
 .recetas_codigo{
-    width: 100%;
+    width: 85%;
     max-height: 100%;
-    background-color:#4F4A49;
-    background-image: url(../img/balsamiq.png);
+    background-image: url(../img/recetasmindhub-codigo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 40px;
+  
    
 
 }
 
 
+.portafolio_codigo{
+    width: 80%;
+    max-height: 100%;
+    background-image: url(../img/portafoliocodigo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+ 
+ 
+   
+
+}
