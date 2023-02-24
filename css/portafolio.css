@@ -197,7 +197,7 @@ div h1{
     background-image: url(../img/recetasmindhub-codigo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 40px;
+    background-position: center;
   
    
 
@@ -211,9 +211,66 @@ div h1{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   
- 
- 
-   
+   }
 
+
+   /* DISEÑO RESPONSIVO */
+
+   @media screen and (min-width: 390px) and (max-width: 844px) {
+    #logo_nav img {
+        padding-top: 15px;
+        padding-left: 5px;
+        width: 25vw;
+    }
+
+    .proyecto{
+        display: grid;
+        grid-template-columns: 3fr ; /*repeat(auto-fill, minmax(200px, 1fr)); acá yo tendría 8 celdas, la primera me ocupa un octavo, la segunda 5 octavos y la tercera 2 octavos.*/
+        grid-template-rows: repeat(5, 300px);
+        margin-left: 10px;
+        padding-top: 20px;
+        width: 80vw;
+    }
+
+.proyecto_balsamiq,.portafolio_balsamiq{
+    margin-left: 15px;
 }
+.recetas_codigo{
+    margin-top: -110px;
+    margin-left: 20px;
+    width: 80vw;
+}
+
+.portafolio_balsamiq{
+    margin-top: -30px;
+}
+
+.portafolio_codigo{
+    margin-top: -210px;
+    margin-left: 20px;
+    width: 80vw;
+}
+
+.habilidades-general{
+   width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.habilidades_tecnicas{
+    width: 90vw;
+    margin-left: -100px;
+    margin-top: -300px;
+}
+.idiomas{
+    width: 90vw;
+    margin-left: -100px;
+    margin-top: -80px;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .nav_menu li{
+        width:22vw;
+    }

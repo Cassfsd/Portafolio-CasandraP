@@ -126,6 +126,10 @@ display: flex;
 /*Estilos de main finaliza acá*/
 
 /* DISEÑO RESPONSIVO */
+* {
+    margin: 0;
+    padding: 0;
+}
 @media screen and (min-width: 390px) and (max-width: 844px) {
 #logo_nav img {
     padding-top: 15px;
@@ -147,9 +151,8 @@ p{
 
 @media screen and (min-width: 768px) and (max-width: 1024px)
 {
-   
-    .nav_menu li{
-        padding-left: -10px;
+   .nav_menu li{
+        width:22vw;
     
     }
     .articulo-inicio{
