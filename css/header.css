@@ -1,12 +1,14 @@
+ /* Dejo esta página completa comentada porque en principio quería tener estos estilos por separado,pero si colocaba un overflow:hidden en el body, me aplicaba tambien a la página de portafolio y ahí necesito que haga scroll--> 
 
 
 
-/* Font */
+
+ Font 
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/* Estilos generales inicia acá (header y footer) */
+ Estilos generales inicia acá (header y footer) 
 
 * {
     box-sizing: border-box;
@@ -38,7 +40,7 @@ header {
     color: antiquewhite;
     z-index: 1;
     display: inline-block;
-    /*reducir espacio entre cada li del nav y hacer funcionar el hover en todos los enlaces */
+    reducir espacio entre cada li del nav y hacer funcionar el hover en todos los enlaces 
 
 }
 
@@ -56,19 +58,21 @@ a {
 
 }
 
-body {
-
+body{
     opacity: 0.9;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
         url(../img/backround3.jpg.png);
+    height: 100%;
 }
+
+
 
 ul {
     list-style: none;
 }
 
 #logo_nav img {
-padding-top: 15px;
+    padding-top: 15px;
     width: 10vw;
     height: 8vh;
 }

@@ -1,10 +1,86 @@
 
+/* Font */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Estilos generales inicia acá (header y footer) */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: antiquewhite;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4F4A49;
+
+
+
+
+}
+
+#nav_menu li {
+    width: 13vw;
+    height: 10vh;
+    padding: 25px 50px;
+    list-style: none;
+    color: antiquewhite;
+    z-index: 1;
+    display: inline-block;
+    /*reducir espacio entre cada li del nav y hacer funcionar el hover en todos los enlaces */
+
+}
+
+
+
+.nav_li a:hover {
+    background-color: royalblue;
+    border-radius: 4px;
+    color: gold;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body{
+    opacity: 0.9;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+        url(../img/backround3.jpg.png);
+        overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+#logo_nav img {
+    padding-top: 15px;
+    width: 10vw;
+    height: 8vh;
+}
+
+
+
+
+/*Estilos de header termina acá*/
 
 
 
 .contacto-texto{
     text-align: justify;
-    padding: 320px;
+    padding: 290px;
     justify-content: center;
     align-items: center;
     border-color: darkgray;
@@ -25,6 +101,23 @@ padding-right: 0.5rem;
 }
 
 
-    
-    
+    /* DISEÑO RESPONSIVE */
+    @media screen and (min-width: 390px) and (max-width: 844px) {
+        #logo_nav img {
+            padding-top: 15px;
+            padding-left: 5px;
+            width: 25vw;
+        }
+        .contacto-texto p{
+            text-align: justify;
+           margin-top: -190px;
+           width: 80vw;
+           margin-left: -250px;
+        }
+    }
 
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        .nav_menu li{
+            width:13vw;
+        }
+    }

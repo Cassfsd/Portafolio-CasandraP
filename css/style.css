@@ -1,21 +1,85 @@
-/*Cosas para arreglar/revisar:
--Poner fixed o sticky en el header y que ande. DONE
--Acomodar el video /cambiarlo por solo sonido 
--Centrar el main
--revisar color de fondo body e img logo_nav (LOS DEJO ASI???)
+/* Font */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Estilos generales inicia acá (header y footer) */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: antiquewhite;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4F4A49;
 
 
 
 
+}
+
+.nav_menu li {
+    width: 13vw;
+    height: 10vh;
+    padding: 25px 50px;
+    list-style: none;
+    color: antiquewhite;
+    z-index: 1;
+    display: inline-block;
+}
 
 
 
-/* Estilos generales y header  finaliza acá */
+.nav_li a:hover {
+    background-color: royalblue;
+    border-radius: 4px;
+    color: gold;
 
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    opacity: 0.9;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+        url(../img/backround3.jpg.png);
+    overflow: hidden;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+#logo_nav img {
+    padding-top: 15px;
+    width: 10vw;
+    height: 8vh;
+}
+
+.sobremi {
+    display: flex;
+    word-wrap: nowrap;
+}
+
+
+/*Estilos de header termina acá*/
 
 /*Estilos de index inicia acá*/
 
-
 .h1,
 h2 {
     justify-content: center;
@@ -67,59 +131,106 @@ h2 {
 
 }
 
+
+
+.h1,
+h2 {
+    justify-content: center;
+}
+
+.texto-inicio {
+    padding-left: 5rem
+}
+
+
+.img_casandra {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    padding-right: 20px;
+}
+
+
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.frontend {
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.conoce-mas {
+    display: flex;
+    color: antiquewhite;
+    background-color: goldenrod;
+    border-color: rgb(227, 212, 184);
+
+
+}
+
+.conoce-mas a:hover {
+    background-color: royalblue;
+    border-color: rgb(51, 51, 180);
+    color: antiquewhite;
+
+
+}
 
 /*Estilos de index finaliza acá*/
 
-.h1,
-h2 {
-    justify-content: center;
+/* DISEÑO RESPONSIVE */
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.texto-inicio {
-    padding-left: 5rem
+@media screen and (min-width: 390px) and (max-width: 844px) {
+    #logo_nav img {
+        padding-top: 15px;
+        padding-left: 5px;
+        width: 25vw;
+    }
+
+
+    .img_casandra {
+        display: flex;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin-top:-90px;
+      margin-left: 20px;
+    }
+
+    .inicio{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .texto-inicio{
+    margin-top: -380px;
+    margin-right: 50px;
+
+
+    }
 }
 
-
-.img_casandra {
-    display: flex;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    padding-right: 20px;
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.nav_menu li{
+    width:22vw;
 }
 
-
-
-.inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+.texto-inicio{
+ margin-top: 6px;
 }
-
-.frontend {
-    justify-content: center;
-    text-align: center;
-
 }
-
-
-.conoce-mas {
-    display: flex;
-    color: antiquewhite;
-    background-color: goldenrod;
-    border-color: rgb(227, 212, 184);
-
-
-}
-
-.conoce-mas a:hover {
-    background-color: royalblue;
-    border-color: rgb(51, 51, 180);
-    color: antiquewhite;
-
-
-}
-
-
-
