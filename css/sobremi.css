@@ -125,22 +125,34 @@ display: flex;
 
 /*Estilos de main finaliza acá*/
 
-/* DISEÑO RESPONSIVO */
-* {
-    margin: 0;
-    padding: 0;
-}
 @media screen and (min-width: 390px) and (max-width: 844px) {
-#logo_nav img {
-    padding-top: 15px;
-    padding-left: 5px;
-    width: 25vw;
-}
+    /* DISEÑO RESPONSIVO */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #logo_nav img {
+        padding-top: 15px;
+        padding-left: 5px;
+        width: 50px;
+        height: 35px;
+    }
+
+    .nav_menu{
+        width: 100vw;
+    }
+
+    .nav_menu li{
+     
+     margin-right: 50px;
+      
+    }
+
 
 .articulo-inicio{
     margin-top: -140px;
     margin-left:-40px;
-overflow:visible;
+
 
 }
 
@@ -150,10 +162,25 @@ p{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px)
-{
-   .nav_menu li{
-        width:22vw;
-    
+{  
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #logo_nav img {
+        padding-top: 15px;
+        padding-left: 5px;
+        width: 50px;
+        height: 35px;
+    }
+
+    .nav_menu{
+        width: 100vw;
+    }
+
+    .nav_menu li{
+       margin-right: 1px;
+      
     }
     .articulo-inicio{
         margin-top: -50px;

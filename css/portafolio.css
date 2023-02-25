@@ -147,16 +147,13 @@ div h1{
    }
 
 .proyecto {
-   
-    display: grid;
+   display: grid;
     grid-template-columns: 3fr 3fr 3fr; /*repeat(auto-fill, minmax(200px, 1fr)); acá yo tendría 8 celdas, la primera me ocupa un octavo, la segunda 5 octavos y la tercera 2 octavos.*/
     grid-template-rows: repeat(2, 300px);
     margin-left: 10px;
     padding-top: 20px;
-    
+}
 
-    
-   }
 .proyecto_integrador{
     width: 100%;
     max-height: 100%;
@@ -164,9 +161,7 @@ div h1{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   
-   
-}
+   }
 
 
 .proyecto_balsamiq{
@@ -176,9 +171,7 @@ div h1{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   
-   
-}
+   }
 
 .portafolio_balsamiq{
     width: 100%;
@@ -187,8 +180,7 @@ div h1{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   
-}
+   }
 
 
 .recetas_codigo{
@@ -198,10 +190,7 @@ div h1{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  
-   
-
-}
+  }
 
 
 .portafolio_codigo{
@@ -217,10 +206,24 @@ div h1{
    /* DISEÑO RESPONSIVO */
 
    @media screen and (min-width: 390px) and (max-width: 844px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
     #logo_nav img {
         padding-top: 15px;
         padding-left: 5px;
-        width: 25vw;
+        width: 50px;
+        height: 35px;
+    }
+
+    .nav_menu{
+        width: 100vw;
+    }
+    
+    .nav_menu li{
+        margin-left:-50px
+      
     }
 
     .proyecto{
@@ -274,3 +277,48 @@ div h1{
     .nav_menu li{
         width:22vw;
     }
+
+    .proyecto{
+        display: grid;
+        grid-template-columns: 3fr ; /*repeat(auto-fill, minmax(200px, 1fr)); acá yo tendría 8 celdas, la primera me ocupa un octavo, la segunda 5 octavos y la tercera 2 octavos.*/
+        grid-template-rows: repeat(5, 300px);
+        margin-left: 10px;
+        padding-top: 20px;
+        width: 80vw;
+    }
+
+   .proyecto_balsamiq, .portafolio_balsamiq{
+    margin-top: 20px;
+   }
+
+.recetas_codigo{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 80vw;
+}
+
+
+.portafolio_codigo{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 80vw;
+}
+
+.habilidades-general{
+   width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.habilidades_tecnicas{
+    width: 90vw;
+    margin-left: -100px;
+    margin-top: 10px;
+}
+.idiomas{
+    width: 90vw;
+    margin-left: -100px;
+    margin-top: 10px;
+   }
+}
